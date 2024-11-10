@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    display: flex;
+    padding: 10px;
+    background-color: #19398A;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid black 2px;
+  
+}
+.container h1{
+    font-size: 40px;
+    color: orangered;
+    animation: rotate;
+    animation-duration: 6s;
+}
+.container p{
+    color:white;
+    font-size: 20px;
+    animation: scle;
+    animation-duration: 2s;
+
+}
+p:hover{
+    border-bottom: solid black 2px;
+}
+#one,#two,#three{
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+}
+.sector img{
+    width:100%;
+}
+#one:hover{
+    background-color: grey;
+    color: white;
+}
+#two:hover{
+    background-color: grey;
+    color: white;
+
+}
+#three:hover{
+    background-color: grey;
+    color: white;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scle{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform:scale(1px)
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <h1>IPL</h1>
+        <p>Matches</p>
+        <p>Videos</p>
+        <p>Stats</p>
+        <p>Point Table</p>
+        <p>Teams</p>
+        <p>News</p>
+        <p>More</p>
+        <div class="container-button">
+            <button id="one">Fan pole</button>
+            <button id="two">Viewer Choice</button>
+            <button id="three">Log Out</button>
+        </div>
+    </div>
+    <!-- <div class="sector">
+        <img src="./img/img1.png" alt="">
+    </div> -->
+</body>
+</html>
